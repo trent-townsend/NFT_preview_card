@@ -46,19 +46,22 @@ hr {
   border-radius: 15px;
   max-width: 100%;
   object-fit: contain;
+  transition: opacity 0.4s 0s ease-in;
 }
 
 .nft-hover-view {
   display: none;
   position: absolute;
+  opacity: 0;
 }
 
 .nft-preview:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .nft-preview:hover + .nft-hover-view {
   display: block;
+  opacity: 1;
 }
 
 .nft-info {
