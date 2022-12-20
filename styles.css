@@ -32,9 +32,32 @@ hr {
   flex-direction: column;
 }
 
-.nft-preview {
-  border-radius: 40px;
+.preview-container {
+  display: flex;
+  max-width: 375px;
   padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-preview {
+  border-radius: 20px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.nft-hover-view {
+  display: none;
+  position: absolute;
+}
+
+.nft-preview:hover {
+  opacity: 0.1;
+  background: white;
+}
+
+.nft-preview:hover + .nft-hover-view {
+  display: block;
 }
 
 .nft-info {
