@@ -35,13 +35,15 @@ hr {
 .preview-container {
   display: flex;
   max-width: 375px;
-  padding: 30px;
   justify-content: center;
   align-items: center;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 17px;
+  margin: 30px;
 }
 
 .nft-preview {
-  border-radius: 20px;
+  border-radius: 15px;
   max-width: 100%;
   object-fit: contain;
 }
@@ -52,8 +54,7 @@ hr {
 }
 
 .nft-preview:hover {
-  opacity: 0.1;
-  background: white;
+  opacity: 0.5;
 }
 
 .nft-preview:hover + .nft-hover-view {
